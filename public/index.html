@@ -11,27 +11,29 @@
       <h3>Rooms</h3>
       <div>
         <button class="roomBtn" data-room="main">Main</button>
-        <button class="roomBtn" data-room="sports">Sports</button>
-        <button class="roomBtn" data-room="tech">Tech</button>
+        <button class="roomBtn" data-room="sports">Room 1</button>
+        <button class="roomBtn" data-room="tech">Room 2</button>
       </div>
+
+      <div class="b-line"></div>
 
       <h3>Online</h3>
       <ul class="users" id="users"></ul>
     </aside>
 
     <main class="chat">
-      <header>
-        <input id="username" placeholder="Your name" />
-        <small id="currentRoom">Room: main</small>
+      <header class="name-n-room">
+        <input class="input-field" id="username" placeholder="Your name" />
+        <small class="currentRoom" id="currentRoom">Room: main</small>
       </header>
 
       <ul id="messages"></ul>
 
       <div id="typing" class="typing"></div>
 
-      <form id="form">
-        <input id="input" autocomplete="off" placeholder="Say something..." />
-        <button>Send</button>
+      <form class="bottom-form" id="form">
+        <input class="input-field" id="input" autocomplete="off" placeholder="Say something..." />
+        <button class="send-btn">Send</button>
       </form>
     </main>
   </div>

@@ -39,30 +39,92 @@ body {
 }
 
 .sidebar ul{
-    border: 1px solid #0E0E52;
+    /* border: 1px solid #0E0E52;
     height: auto;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 15px; */
+    list-style: square;
 }
 
 .sidebar .users{
     padding: 100px;
     color: #0E0E52;
-    /* text-align: left; */
+    text-align: left; 
 }
-.chat {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+
+.b-line{
+    margin-top: 15px;
+    border-top: 1px solid #0E0E52;
 }
+
+.name-n-room{
+    background-color: #150578;
+}
+
 header {
   padding: 12px;
   display: flex;
   gap: 12px;
   align-items: center;
-  background: #fafafa;
-  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;  
 }
+
+.input-field{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.input-field:focus{
+    outline: none;
+    box-shadow: 5px 5px 8px #06062b47;
+}
+
+.input-field::placeholder{
+    opacity: 1;
+    transition: .1s all linear;
+}
+
+.input-field:focus::placeholder{
+    opacity: 0;
+}
+
+header .currentRoom{
+    font-size: 20px;
+    color: #fff;
+}
+
+.bottom-form{
+    background-color: #150578;
+}
+
+.bottom-form .input-field{
+    width: 60%;
+}
+
+.send-btn{
+    border-radius: 10px;
+    border: none;
+    width: 20%;
+    transition: .3s all linear;
+}
+
+.send-btn:hover{
+    background-color: #0E0E52;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
 #messages {
   list-style: none;
   padding: 12px;
@@ -71,21 +133,35 @@ header {
   margin: 0;
   background: linear-gradient(#fff, #f9fbfd);
 }
+
 #messages li {
   margin-bottom: 10px;
 }
-.message .meta {
+
+.message .meta{
   font-weight: 600;
+  font-size: 17px;
+  padding-right: 10px;
+  color: #0E0E52;
 }
+
+.message .meta small{
+    font-weight: normal;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
 .message .text {
-  padding: 8px 10px;
-  background: #f1f6ff;
+  padding: 6px 10px;
+  background-color: #78C0E0;
   display: inline-block;
-  border-radius: 6px;
-  margin-top: 4px;
+  border-radius: 10px;
+  margin-top: 5px;
+  color: #0E0E52;
+  
 }
 .system {
-  color: #666;
+  color: #6666669f;
   font-style: italic;
 }
 form {
@@ -94,6 +170,8 @@ form {
   gap: 8px;
   background: #fff;
   border-top: 1px solid #eee;
+  align-items: center;
+  justify-content: space-between;
 }
 input,
 button {
