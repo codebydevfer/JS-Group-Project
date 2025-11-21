@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #eef2f5;
+}
+.wrap {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 220px;
+  padding: 16px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+}
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+#messages {
+  list-style: none;
+  padding: 12px;
+  flex: 1;
+  overflow: auto;
+  margin: 0;
+  background: linear-gradient(#fff, #f9fbfd);
+}
+#messages li {
+  margin-bottom: 10px;
+}
+.message .meta {
+  font-weight: 600;
+}
+.message .text {
+  padding: 8px 10px;
+  background: #f1f6ff;
+  display: inline-block;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+.system {
+  color: #666;
+  font-style: italic;
+}
+form {
+  display: flex;
+  padding: 12px;
+  gap: 8px;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+input,
+button {
+  padding: 8px;
+  font-size: 14px;
+}
+#users {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+.roomBtn {
+  margin-right: 6px;
+  margin-top: 6px;
+  padding: 6px 8px;
+}
+.typing {
+  height: 18px;
+  padding-left: 12px;
+  color: #666;
+  font-style: italic;
+}
