@@ -1,5 +1,16 @@
+/* Colors
+Azure Mist: #D9F0FA    
+Sky Blue: #78C0E0                               -Ligther
+    Blue Bell: #449DD1                                      +
+    Ocean Twilight Blue: #3943B7                +
+    Navy Blue: #150578                                   +
+    Deep Twilight Blue: #0E0E52             -Darker
+*/
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: Arial, sans-serif;
@@ -13,8 +24,31 @@ body {
 .sidebar {
   width: 220px;
   padding: 16px;
-  background: #fff;
+  background: #D9F0FA;
   border-right: 1px solid #ddd;
+}
+
+.sidebar h3{
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: normal;
+    color: #0E0E52;
+    text-align: left;
+}
+
+.sidebar ul{
+    border: 1px solid #0E0E52;
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.sidebar .users{
+    padding: 100px;
+    color: #0E0E52;
+    /* text-align: left; */
 }
 .chat {
   flex: 1;
@@ -72,10 +106,31 @@ button {
   margin-top: 8px;
 }
 .roomBtn {
-  margin-right: 6px;
-  margin-top: 6px;
-  padding: 6px 8px;
+  /* margin-right: 6px;
+  margin-top: 6px; */
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color:  #449DD1;
+  color: #0E0E52;
+  transition: .3s all linear;
+  text-transform: uppercase;
+  font-weight: bold;
 }
+
+.roomBtn:hover{
+    background-color: #0E0E52;
+    color: #78C0E0;
+    cursor: pointer;
+}
+
+.roomBtn:focus{
+    background-color: #0E0E52;
+    color: #78C0E0;
+    cursor: pointer;
+}
+
 .typing {
   height: 18px;
   padding-left: 12px;
