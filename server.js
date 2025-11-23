@@ -1,5 +1,5 @@
 /**
- * Advanced chat server
+ *chat server
  * Features:
  * - usernames
  * - rooms
@@ -20,6 +20,7 @@ const { Server } = require('socket.io');
 const { v4: uuidv4 } = require('uuid');
 
 const DATA_FILE = path.join(__dirname, 'messages.json');
+
 
 const app = express();
 const server = http.createServer(app);
@@ -151,4 +152,4 @@ function broadcastUserList(room) {
 })();
 
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => console.log(`Advanced chat server listening on http://localhost:${PORT}`));
+server.listen(PORT, () => console.log(`Chat server listening on http://localhost:${PORT}`));

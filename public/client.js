@@ -1,4 +1,4 @@
-// Advanced client-side logic
+// client-side logic
 const socket = io();
 
 const form = document.getElementById('form');
